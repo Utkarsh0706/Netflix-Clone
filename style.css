@@ -1,0 +1,241 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #030101;
+}
+#text1 h1 , #text2 h1{
+    font-weight: 900;
+    font-size: 9vh;
+}
+#text1 p , #text2 p{
+    font-weight: 600;
+    font-size: 5vh;
+}
+
+
+header{
+    background: url(./images/landing\ page.png);
+    height:100vh;
+    width:100%;
+   color:white;
+}
+header nav{
+    height:10vh;
+    background-color: rgba(124, 49, 72, 0);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2vh;
+}
+header img{
+   transform: scale(.8);
+}
+select{
+    background-color: #3a383800;
+    color:white;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top:20vh;
+    font-size: 5vh;
+}
+#btn1{
+    background-color: rgb(194, 16, 16);
+    color: aliceblue;
+    font-weight: 900;
+    height:46px;
+    margin-top:1%;
+    width: 19vw;
+}
+#emailError {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.1); /* Transparent red background */
+    padding: 5px;
+    border-radius: 5px;
+}
+.divider{
+    height: 4vh;
+    background-color: rgb(35, 33, 37);
+}
+.tv,.watch,.kids,.qna,.download{
+    height: 100vh;
+    background-color: black;
+    color:white;
+}
+
+.accordion {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #3a3838;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 80vw;
+    height: 10vh;
+}
+
+.accordion:hover {
+    background-color: #3a3838;
+}
+
+.accordion .icon {
+    float: right;
+}
+.content{
+   background-color: #3a3838;
+}
+
+.qna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.accordians{
+    margin-top: 4vh;
+    margin-left:20vw;
+    margin-right: 20vw;
+    font-size: 4vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contact{
+    height: 60vh;
+    width: 100%;
+    background-color: black;
+    color:white;
+    display: grid;
+    padding-top:10vh;
+    padding-left:20vw;
+    grid-template-columns: 25% 25% 25% 25%;
+    list-style-type: none;
+}
+.contact a{
+ color: white;
+ font-size: 3vh;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    height:80vh;
+    padding-top: 20vh;
+}
+#img1{
+    grid-column:1;
+}
+
+#text1{
+    grid-row: 1;
+    grid-column: 2;
+}
+#text2{
+    grid-row: 1;
+    grid-column: 1;
+}
+/* Target the input field */
+.input-container {
+    position: relative;
+}
+
+input[type="email"] {
+    width: 30vw;
+    padding: 10px;
+    font-size:15px;
+}
+
+/* Placeholder animation styles */
+input[type="email"]::placeholder {
+    font-size: 3vh;
+    color: #c00505;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: top 0.3s, font-size 0.3s;
+}
+
+input[type="email"]:focus::placeholder,
+input[type="email"]:not(:placeholder-shown)::placeholder {
+    top: 0;
+    font-size: 12px; /* Adjust the font size when it moves to the top */
+}
+.sub{
+    display: flex;
+    gap:1vw;
+}
+#sign{
+    display: flex;
+    gap:1vw;
+    height: 6vh; 
+}
+@media (max-width: 1000px) {
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-items: center;
+      width: 80vw;
+      margin-left: 4vw;
+      margin-right: 4vw;
+      margin-top: 2vh;
+      font-size: 5vw;
+    }
+  
+    .container {
+      grid-template-columns:  1fr;
+      gap: 20px;
+    }
+    #text1{
+        grid-column: 1;
+    }
+    .container img {
+      display: none;
+    }
+  
+  .tv{
+      background-image: url(./images/breaking.jfif);
+      background-repeat: no-repeat;
+      background-size:cover;
+      color:#059bc0;
+  }
+  .watch{
+      background-image: url(./images/saul.jfif);
+      background-repeat: no-repeat;
+      background-size:cover;
+      color:#ffffff;
+  }
+  .kids{
+      background-image: url(./images/download.jfif);
+      background-repeat: no-repeat;
+      background-size:cover;
+      color:#ffffff;
+  }
+  .download{
+      background-image: url(./images/minions.png);
+      background-repeat: no-repeat;
+      background-size:cover;
+      color:#ffffff;
+  }
+  .contact{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+   .accordion, .content{
+    font-size: 5vw;
+   }
+   #btn1{
+    font-size: 2vw;
+   }
+   .qna{
+    height:120vh;
+   }
+  }
+  
